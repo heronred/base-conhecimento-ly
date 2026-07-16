@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base de Conhecimento — Sistema Lyceum</title>
+<meta name="description" content="Base de conhecimento estruturada sobre o sistema acadêmico Lyceum, para consumo por humanos e por IA (Copilot).">
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card-bg: #ffffff;
+    --text: #1f2430;
+    --muted: #5b6472;
+    --accent: #2f6fed;
+    --accent-light: #e8f0fe;
+    --border: #e3e6eb;
+    --important: #b45309;
+    --important-bg: #fff7ed;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #2f6fed, #1e4fb8);
+    color: #fff;
+    padding: 48px 20px 40px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 8px; font-size: 1.8rem; }
+  header p { margin: 0; opacity: 0.9; font-size: 1rem; }
+  .container {
+    max-width: 860px;
+    margin: -20px auto 60px;
+    padding: 0 20px;
+  }
+  nav.toc {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  }
+  nav.toc h2 {
+    font-size: 1rem;
+    margin: 0 0 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  nav.toc ol { margin: 0; padding-left: 20px; }
+  nav.toc a { color: var(--accent); text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
+
+  article.topic {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    scroll-margin-top: 20px;
+  }
+  article.topic > h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: var(--text);
+    border-bottom: 2px solid var(--accent-light);
+    padding-bottom: 10px;
+  }
+  article.topic h3 {
+    font-size: 1.05rem;
+    color: var(--accent);
+    margin: 22px 0 8px;
+  }
+  article.topic p, article.topic li { color: var(--text); font-size: 0.98rem; }
+  article.topic ul, article.topic ol { padding-left: 22px; }
+
+  .important {
+    background: var(--important-bg);
+    border-left: 4px solid var(--important);
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 12px 0;
+    font-size: 0.92rem;
+    color: var(--important);
+  }
+  .important strong { color: var(--important); }
+
+  .video-hook {
+    margin-top: 24px;
+    padding: 18px 20px;
+    background: var(--accent-light);
+    border: 1px dashed var(--accent);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .video-hook .icon { font-size: 1.3rem; }
+  .video-hook .placeholder { font-weight: 600; color: var(--accent); }
+  .video-hook a { color: var(--accent); }
+
+  code {
+    background: #eef1f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Base de Conhecimento — Sistema Lyceum</h1>
+  <p>Tutoriais e processos acadêmicos/administrativos</p>
+</header>
+
+<div class="container">
+
+  <nav class="toc">
+    <h2>Índice de Tópicos</h2>
+    <ol>
+      <li><a href="#topico-funcionalidades-basicas">Funcionalidades Básicas</a></li>
+      <li><a href="#topico-calendario-academico">Calendário Acadêmico</a></li>
+      <li><a href="#topico-cursos-educacao-basica">Cursos (Educação Básica)</a></li>
+    </ol>
+  </nav>
+
+  <!-- ============================================================ -->
+  <!-- ===== INÍCIO DO TÓPICO: funcionalidades-basicas ============ -->
+  <!-- ============================================================ -->
+  <article
+    class="topic"
+    id="topico-funcionalidades-basicas"
+    data-topic-id="funcionalidades-basicas"
+    data-topic-title="Funcionalidades Básicas">
+
+    <h2>Tópico: Funcionalidades Básicas</h2>
+
+    <h3>Objetivo</h3>
+    <p>Garantir a gestão integrada, padronizada e segura dos processos acadêmicos e administrativos, assegurando o registro correto das informações, a eficiência operacional e a confiabilidade dos dados para apoio à tomada de decisão.</p>
+
+    <h3>Usuários e Padrões de Acesso</h3>
+    <p>O acesso ao sistema Lyceum é concedido de forma controlada e segmentada, alinhada à área de atuação e ao escopo de trabalho de cada colaborador, seguindo o princípio do acesso mínimo necessário.</p>
+    <p><strong>Critérios considerados:</strong></p>
+    <ul>
+      <li>Área de atuação (acadêmica, administrativa, pedagógica, financeira, gestão)</li>
+      <li>Escopo das atividades desempenhadas</li>
+      <li>Nível de responsabilidade sobre dados sensíveis ou estratégicos</li>
+      <li>Necessidade operacional (consulta, inclusão, alteração ou validação)</li>
+    </ul>
+    <div class="important">
+      <strong>Importante:</strong> Acessos devem ser revisados sempre que houver alteração de função, movimentação interna ou desligamento — responsabilidade das áreas gestoras.
+    </div>
+
+    <h3>Primeiro Acesso ao Sistema</h3>
+    <ol>
+      <li>Acessar: <code>https://colegiosmaristas.com.br/sistemas/</code></li>
+      <li>Selecionar <strong>Sistemas Educacionais – LYCEUM SECRETARIA</strong></li>
+      <li>Inserir login e senha padrão da rede</li>
+      <li>Acessar o <strong>Resumo Acadêmico</strong></li>
+    </ol>
+
+    <h3>Composição dos Códigos no Sistema</h3>
+    <ul>
+      <li><strong>Código da Unidade:</strong> 2043 (João Paulo II)</li>
+      <li><strong>Código do Segmento:</strong> Cód. Unidade + 01/02/03 — ex: 204301 (Infantil), 204302 (Fundamental), 204303 (Médio)</li>
+      <li><strong>Código da Disciplina:</strong> Cód. Unidade + Cód. Curso + sequencial — ex: 2043011001, 2043021001, 2043031001, 2043031OP001 (Optativas)</li>
+      <li><strong>Código da Matrícula (RA):</strong> ex: 2043260001</li>
+    </ul>
+
+    <!-- VIDEO_TUTORIAL_SLOT: funcionalidades-basicas -->
+    <div class="video-hook" data-video-slot="funcionalidades-basicas">
+      <span class="icon">🎥</span>
+      <span class="placeholder">Vídeo tutorial deste tópico:</span>
+      <a href="#" data-video-link="funcionalidades-basicas" target="_blank">[INSERIR_LINK_AQUI]</a>
+    </div>
+
+  </article>
+  <!-- ============================================================ -->
+  <!-- ===== FIM DO TÓPICO: funcionalidades-basicas ================ -->
+  <!-- ============================================================ -->
+
+
+  <!-- ============================================================ -->
+  <!-- ===== INÍCIO DO TÓPICO: calendario-academico ================ -->
+  <!-- ============================================================ -->
+  <article
+    class="topic"
+    id="topico-calendario-academico"
+    data-topic-id="calendario-academico"
+    data-topic-title="Calendário Acadêmico">
+
+    <h2>Tópico: Calendário Acadêmico</h2>
+
+    <h3>Objetivo</h3>
+    <p>Assegurar a organização, o alinhamento institucional e a execução dos períodos e atividades letivas, garantindo conformidade normativa, previsibilidade dos processos acadêmicos e correta operacionalização no sistema.</p>
+
+    <p>O Calendário Acadêmico consolida datas e períodos letivos, devendo ser parametrizado no sistema após deliberação das Regionais, Secretarias e Núcleos de Educação locais.</p>
+
+    <p><strong>Acesso:</strong> Menu Secretaria Acadêmica → Calendário → Calendário Acadêmico (TCUR055D)</p>
+
+    <h3>Bloco 1 — Filtros e Calendário</h3>
+    <ul>
+      <li>Filtros: Unidade Resp., Unidade Física, Curso, Turno, Currículo, Tipos de Eventos</li>
+      <li>Opções: "Exibir apenas visível para aluno" e "Exibir apenas eventos do filtro selecionado sem acumular outros níveis"</li>
+      <li>Exibição padrão: mês/ano corrente com eventos do tipo "Geral"</li>
+    </ul>
+    <div class="important">
+      <strong>Níveis de associação</strong> (quando a opção de acumulação não está marcada): Currículo herda eventos de Curso e Unidade; Curso herda eventos da Unidade; Unidade Responsável herda eventos "Geral"; Unidade Física não possui associação com outros níveis.
+    </div>
+
+    <h3>Bloco 2 — Eventos do dia selecionado</h3>
+    <p>Grid editável para consultar, alterar ou excluir eventos do dia. Somente os campos "Descrição" e "Ativo" podem ser alterados.</p>
+
+    <h3>Bloco 3 — Inclusão de novos eventos</h3>
+    <ul>
+      <li><strong>Tipo de Cadastro:</strong> Geral, Unidade de Ensino, Unidade Física, Curso ou Currículo</li>
+      <li><strong>Tipo de Evento:</strong> nomenclatura exibida no calendário (não pode repetir no mesmo nível)</li>
+      <li><strong>Descrição:</strong> pode usar valores do SQL configurado em "Cadastro de Tipos de Eventos"</li>
+      <li><strong>Duração:</strong> visibilidade para aluno, data início/término, dias da semana</li>
+    </ul>
+    <div class="important">
+      <strong>Importante:</strong> Se nenhum turno for selecionado, o sistema insere feriados nacionais automaticamente para TODOS os turnos.
+    </div>
+    <p><strong>Log:</strong> acompanhamento da situação do processo (Finalizado / Não concluído).</p>
+
+    <h3>Bloco 4 — Impressão do Calendário</h3>
+    <p>Download em PDF com opções: Período específico, Ano Inteiro ou Mês Selecionado.</p>
+
+    <h3>Bloco 5 — Inclusão de Feriados Nacionais</h3>
+    <p>Selecionar Turno(s) e Ano, e clicar em "Incluir Feriados". Se nenhum turno for selecionado, insere para todos. Todos os feriados são visíveis para o aluno.</p>
+
+    <!-- VIDEO_TUTORIAL_SLOT: calendario-academico -->
+    <div class="video-hook" data-video-slot="calendario-academico">
+      <span class="icon">🎥</span>
+      <span class="placeholder">Vídeo tutorial deste tópico:</span>
+      <a href="#" data-video-link="calendario-academico" target="_blank">[INSERIR_LINK_AQUI]</a>
+    </div>
+
+  </article>
+  <!-- ============================================================ -->
+  <!-- ===== FIM DO TÓPICO: calendario-academico ==================== -->
+  <!-- ============================================================ -->
+
+
+  <!-- ============================================================ -->
+  <!-- ===== INÍCIO DO TÓPICO: cursos-educacao-basica ================ -->
+  <!-- ============================================================ -->
+  <article
+    class="topic"
+    id="topico-cursos-educacao-basica"
+    data-topic-id="cursos-educacao-basica"
+    data-topic-title="Cursos (Educação Básica)">
+
+    <h2>Tópico: Cursos (Educação Básica)</h2>
+
+    <h3>Objetivo</h3>
+    <p>Estruturar e gerenciar a oferta da Educação Básica no Lyceum, organizando os cursos por nível de ensino e unidade responsável, assegurando padronização cadastral, integração com os currículos vigentes e suporte aos processos acadêmicos e administrativos.</p>
+
+    <p><strong>Acesso:</strong> Menu Estrutura Institucional → Cursos e Currículos → Cursos</p>
+
+    <p>A tela de Cursos é dividida em 3 fichas:</p>
+
+    <h3>3.1 Dados Gerais</h3>
+    <p>Ficha principal onde são cadastrados os dados do curso. Para inserir as informações de <strong>Nível</strong>, é necessário que já estejam previamente cadastradas em suas respectivas telas.</p>
+
+    <h3>3.2 Responsáveis</h3>
+    <p>Cadastro dos dados do <strong>Diretor Escolar</strong> e do <strong>Secretário Escolar</strong>, responsáveis pela assinatura dos documentos oficiais dos estudantes.</p>
+
+    <h3>3.3 Decreto</h3>
+    <p>Registro do decreto/portaria que autoriza o funcionamento do curso na instituição. Quando o curso é reconhecido, a portaria de autorização pode ser substituída pelo reconhecimento.</p>
+    <div class="important">
+      <strong>Importante:</strong> Atualizações devem seguir as alterações da equipe responsável pela unidade. Sempre que houver mudanças anuais, as secretarias escolares devem solicitar a atualização via sistema de chamados ao analista de referência, com a documentação comprobatória anexada.
+    </div>
+
+    <!-- VIDEO_TUTORIAL_SLOT: cursos-educacao-basica -->
+    <div class="video-hook" data-video-slot="cursos-educacao-basica">
+      <span class="icon">🎥</span>
+      <span class="placeholder">Vídeo tutorial deste tópico:</span>
+      <a href="#" data-video-link="cursos-educacao-basica" target="_blank">[INSERIR_LINK_AQUI]</a>
+    </div>
+
+  </article>
+  <!-- ============================================================ -->
+  <!-- ===== FIM DO TÓPICO: cursos-educacao-basica =================== -->
+  <!-- ============================================================ -->
+
+</div>
+
+<footer>
+  Base de Conhecimento — Sistema Lyceum
+</footer>
+
+</body>
+</html>
